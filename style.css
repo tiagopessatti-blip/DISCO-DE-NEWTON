@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    background: white;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Disco de Newton */
+.disco {
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 3px solid #444;
+    background: conic-gradient(
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet,
+        red
+    );
+    animation: girar 2s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* LED simples */
+#led {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0 0 5px red;
+}
+
+/* LED RGB */
+#rgb {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0 0 20px red;
+}
+
+p {
+    line-height: 1.6;
+    color: #444;
+}
